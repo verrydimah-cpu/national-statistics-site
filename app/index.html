@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NusaStat — Portal Statistik Indonesia</title>
+<meta name="description" content="NusaStat: portal statistik Indonesia — penduduk, ekonomi, ketenagakerjaan, pendidikan, kesehatan, dan perbandingan provinsi, dengan angka resmi BPS dan tahun rujukan.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">N</span>
+      <span class="brand-text"><strong>NusaStat</strong><span>Portal Statistik Indonesia</span></span>
+    </a>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" class="main-nav" aria-label="Navigasi utama">
+      <a href="#/" data-route="">Beranda</a>
+      <a href="#/population" data-route="population">Penduduk</a>
+      <a href="#/economy" data-route="economy">Ekonomi</a>
+      <a href="#/employment" data-route="employment">Ketenagakerjaan</a>
+      <a href="#/education" data-route="education">Pendidikan</a>
+      <a href="#/health" data-route="health">Kesehatan</a>
+      <a href="#/provinces" data-route="provinces">Provinsi</a>
+      <a href="#/methodology" data-route="methodology">Metodologi</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ticker wrap" id="ticker" aria-label="Ringkasan angka terbaru"></div>
+
+<main id="app" class="wrap" aria-live="polite"></main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <strong>NusaStat</strong>
+      <p>Portal statistik Indonesia yang independen dan orisinal. Angka-angka di situs ini
+      dirangkum dari publikasi resmi Badan Pusat Statistik (BPS) dan dicantumkan beserta tahun
+      rujukannya pada setiap angka.</p>
+    </div>
+    <div>
+      <strong>Jelajahi</strong>
+      <p><a href="#/population">Penduduk &amp; demografi</a><br>
+      <a href="#/economy">Ekonomi</a><br>
+      <a href="#/employment">Ketenagakerjaan</a><br>
+      <a href="#/provinces">Perbandingan provinsi</a></p>
+    </div>
+    <div>
+      <strong>Sumber data</strong>
+      <p>Badan Pusat Statistik (BPS) — bps.go.id<br>
+      Publikasi Statistik Indonesia, Berita Resmi Statistik,<br>
+      Survei Angkatan Kerja Nasional, Susenas, dan SSGI.</p>
+    </div>
+  </div>
+  <div class="wrap footer-note">NusaStat bukan situs resmi BPS. Data ditampilkan untuk keperluan informasi.
+  Terakhir diperbarui: November 2026. Seluruh konten di situs ini adalah karya orisinal.</div>
+</footer>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
